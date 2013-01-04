@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,400,800' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="/css/styles.less" />
+
+    <script src="/js/less.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Daily Links <span>for</span> CS</h1>
+        <h2><span>Aggregated blogs, newsletters & papers</span></h2>
+      </div>
+
+      <div id="links">
+        <h2>General</h2>
+        <div class="row">
+          <%= render_source locals[:links][:scala] %>
+          <%= render_source locals[:links][:reddit] %>
+          <%= render_source locals[:links][:dzone] %>
+        </div>
+
+        <h2>Front-End</h2>
+        <div class="row">
+          <%= render_source locals[:links][:sidebar] %>
+          <%= render_source locals[:links][:javascript] %>
+          <%= render_source locals[:links][:css] %>
+        </div>
+
+
+        <h2>Research</h2>
+        <div class="row">
+          <%= render_source locals[:links][:google_ai] %>
+          <%= render_source locals[:links][:google_dist_systems] %>
+          <%= render_source locals[:links][:jlmr] %>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+
